@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>Java Program</title>
+    </head>
+    <body id="ht1">
+        <h1 align="center">STUDENT INFORMATION</h1>
+        <fieldset id="f1"><legend align="center">Students Details</legend>
+        <form action="action_page.php">
+            <table cellspacing="10" cellpadding="10" align="center">
+                <tr>
+                    <td><label for="a1">FirstName:</label></td>
+                    <td><input type="search" id="a1" name="a1"></td>
+                </tr>
+                <tr>
+                    <td><label for="a2">LastName:</label></td>
+                    <td><input type="search" id="a2" name="a2"></td>
+                </tr>
+                <tr>
+                    <td><label for="a3"><abbr title="Date of Birth">DOB</abbr></label></td>
+                    <td><input type="date" id="a3" name="a2"></td>
+                </tr>
+                <tr>
+                    <td><p>Gender:</p></td>
+                    <td><input type="radio" id="male" name="a4" value="1">
+                    <label for="male">Male</label></td>
+                    <td><input type="radio" id="female" name="a5" value="1">
+                    <label for="female">Female</label></td>
+                    <td><input type="radio" id="trans" name="a66" value="1">
+                    <label for="trans">Transgender</label></td>
+                </tr>
+                <tr>
+                    <td><label for="a6">Age</label></td>
+                    <td><input type="number" min="14" max="20" value="14"></td>
+                </tr>
+                <tr>
+                    <td><label for="a7">Qualification</label></td>
+                    <td><select name="a7" id="a7">
+                        <option value="B.E">B.E</option>
+                        <option value="B.T">B.Tech</option>
+                        <option value="diploma">Diploma</option>
+                        <option value="SSLC">SSLC</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="b7">College Name</label></td>
+                    <td><input type="search" id="b7" name="b7"></td>
+                </tr>
+                <tr>
+                        <td><label for="b6">Citizenship</label></td>
+                        <td><select name="a7" id="a7">
+                        <option value="India">India</option>
+                        <option value="China">China</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Nepal">Nepal</option>
+                        </select></td>
+                    
+                </tr>
+                <tr>
+                    <td><p>Achivements</p></td>
+                    <td><input type="checkbox" id="b1" name="b1" value="Badminton">
+                    <label for="b1">Badminton</label><br></td>
+                    <td><input type="checkbox" id="b2" name="b2" value="Handball">
+                    <label for="b2">Handball</label><br></td>
+                    <td><input type="checkbox" id="b3" name="b3" value="Football">
+                    <label for="b3">Football</label><br></td>
+                    <td><input type="checkbox" id="b4" name="b4" value="Throwball">
+                    <label for="b4">Throwball</label><br></td>
+                    <td><input type="checkbox" id="b5" name="b5" value="Cricket">
+                    <label for="b5">Cricket</label><br></td>
+                </tr>
+                <tr>
+                    <td><label for="a8">Phone Number</label></td>
+                    <td> <input type="text" id="a8" name="a8"></td>
+                </tr>
+                <tr>
+                    <td><label for="a9">Email:</label></td>
+                    <td><input type="text" id="a9" name="a9"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="a10" onmouseover="mOver(this)" onmouseout="mOut(this)" onclick="refreshPage()">Submit</button></td>
+                    <td><a id="a11" href="index1.html">Click here to<b>Refresh Page</b></a> 
+                    </td>
+                </tr>
+                
+            </table>
+        </form>
+        </fieldset>
+        <style>
+            #f1{
+                background-color: #9da8b4;
+            }
+            html{
+                background-image: url('C:\Users\K Jaiyanth\Downloads\desktop-wallpaper-colorful-holographic-gradient-backgrounds-design-aesthetic-gradient-tumblr.jpg');
+                background-color: darkgray;
+            }    
+        </style>
+        <script>
+	   	document.getElementById("a10").innerHTNL = "click me";
+        
+        function mOver(obj) {
+        obj.innerHTML = "Click me"
+        }
+        
+        function mOut(obj) {
+        obj.innerHTML = "Submit"
+        }
+        function refreshPage() {
+            window.location.href="w3schools.com";
+        }
+        
+        document.getElementById("a11").style.backgroundColor = "darkgray";
+        </script>
+    </body>
+</html>
